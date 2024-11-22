@@ -42,7 +42,7 @@ function App() {
 
   useEffect(() => {
     taskController.view.render(taskController.model.getTasks());  // Initial render
-  }, []);
+  }, [taskController.model, taskController.view]);
 
   return (
     <div>
